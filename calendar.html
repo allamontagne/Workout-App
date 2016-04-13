@@ -1,0 +1,289 @@
+<html>
+<body>
+
+<div class ="nav">
+		<ul class="topnav">
+			<li><a class ="active" href = ""> Home</a></li>
+			<li><a href = "">My Workout</a></li>
+			<li><a href = "">Calender</a></li>
+			<li><a href = "">Equiptment Lookup</a></li>
+			<li class="icon">
+				<a href="javascript:void(0);" onclick="navFunction()">&#9776;</a>
+			</li>
+		</ul>
+	</div>
+
+<div class="month"> 
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>
+      August<br>
+      <span style="font-size:18px">2016</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days"> 
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li>11</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+
+
+<style>
+body {
+	margin: 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3B8183;
+	font-size: 18px;
+}
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: #FAD089;
+}
+
+ul.topnav li.icon {
+	display: none;
+}
+
+ul.topnav li a.active {
+	background-color: #FF9C5B;
+}
+
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+	margin-top: 15px;
+    padding: 50px 25px;
+    background: #F5634A;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+	text-align: center;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.25%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.25%;
+    text-align: center;
+    margin-bottom:15px;
+    font-size:12px;
+    color:#777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+    padding: 5px;
+    background: #F5634A;
+    color: white !important
+}
+
+@media screen and (max-width: 540px) and (min-width: 401px){
+    ul.topnav li {
+		float: none;
+		font-size: 16px;
+	}
+		/* Weekdays (Mon-Sun) */
+	.weekdays {
+		margin: 0;
+		padding: 10px 0;
+		background-color:#ddd;
+	}
+
+	.weekdays li {
+		display: inline-block;
+		width: 12.25%;
+		color: #666;
+		text-align: center;
+	}
+
+	/* Days (1-31) */
+	.days {
+		padding: 10px 0;
+		background: #eee;
+		margin: 0;
+	}
+
+	.days li {
+		list-style-type: none;
+		display: inline-block;
+		width: 12.25%;
+		text-align: center;
+		margin-bottom:15px;
+		font-size:12px;
+		color:#777;
+	}
+	}
+}
+@media screen and (max-width: 400px){
+	
+}
+
+@media screen and (max-width: 400px){
+	ul.topnav li:not(:first-child) {
+		display: none;
+	}
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+	ul.topnav.responsive {
+		position: relative;
+	}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}
+	/* Weekdays (Mon-Sun) */
+	.weekdays {
+		margin: 0;
+		padding: 10px 0;
+		background-color:#ddd;
+	}
+
+	.weekdays li {
+		display: inline-block;
+		width: 12.25%;
+		color: #666;
+		text-align: center;
+	}
+
+	/* Days (1-31) */
+	.days {
+		padding: 10px 0;
+		background: #eee;
+		margin: 0;
+	}
+
+	.days li {
+		list-style-type: none;
+		display: inline-block;
+		width: 12.25%;
+		text-align: center;
+		margin-bottom:15px;
+		font-size:12px;
+		color:#777;
+	}
+}
+
+
+</style>
+<script>
+	function navFunction() {
+		document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+	}
+</script>
+</body>
+</html>
