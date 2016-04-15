@@ -82,12 +82,18 @@ ul.topnav li.icon {
 			<li><a href = "HomeScreen.html"> Home</a></li>
 			<li><a href = "WorkoutScreen.html">My Workout</a></li>
 			<li><a href = "CalendarScreen.html">Calendar</a></li>
-			<li><a href = "ELookUpScreen.html">Equipment Lookup</a></li>
+			<li><a href = "ELookUp.html">Equipment Lookup</a></li>
 			<li class="icon">
-				<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+				<a href="javascript:void(0);" onclick="navFunction()">&#9776;</a>
 			</li>
 		</ul>
 	</div>
 </body>
 <h1>Help here!!!</h1>
+
+	<script>
+function navFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+</script>
 </html>
