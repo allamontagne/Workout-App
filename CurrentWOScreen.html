@@ -84,7 +84,7 @@ ul.topnav li a.active {
 			<li><a href = "HomeScreen.html"> Home</a></li>
 			<li><a class ="active" href ="WorkoutScreen.html"">My Workout</a></li>
 			<li><a href = "CalendarScreen.html">Calendar</a></li>
-			<li><a href = "ELookUpScreen.html">Equipment Lookup</a></li>
+			<li><a href = "ELookUp.html">Equipment Lookup</a></li>
 			<li class="icon">
 				<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
 			</li>
@@ -94,4 +94,9 @@ ul.topnav li a.active {
 <h1>
 	<p class = "pageTitle", align="center">Chosen Workout</p>
 </h1>
+<script>
+function navFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+</script>
 </html>
