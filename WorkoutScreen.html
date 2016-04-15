@@ -1,0 +1,142 @@
+<html>
+<head>
+<style>
+body {
+	margin: 0;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3B8183;
+	font-size: 18px;
+}
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: #FAD089;
+}
+
+ul.topnav li.icon {
+	display: none;
+}
+
+ul.topnav li a.active {
+	background-color: #FF9C5B;
+}
+
+
+@media screen and (max-width: 500px) and (min-width: 400px){
+    ul.topnav li {
+		float: none;
+	}
+	}
+}
+@media screen and (max-width: 400px){
+	
+}
+
+@media screen and (max-width: 400px){
+	ul.topnav li:not(:first-child) {
+		display: none;
+	}
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+	ul.topnav.responsive {
+		position: relative;
+	}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}
+}
+
+</style>
+</head>
+
+<body>
+	<div class ="nav">
+		<ul class="topnav">
+			<li><a href = "HomeScreen.html"> Home</a></li>
+			<li><a class ="active" href = "">My Workout</a></li>
+			<li><a href = "CalendarScreen.html">Calendar</a></li>
+			<li><a href = "ELookUpScreen.html">Equipment Lookup</a></li>
+			<li class="icon">
+				<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+			</li>
+		</ul>
+	</div>
+</body>
+
+<body>
+<form method="link">
+	<input type = "button" onclick="location.href='HelpScreen.html';" id = "HelpButton" value="?">
+</form>
+</body>
+
+<style>
+#helpButton {
+	background-color: #F5634A;
+	height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+	float:right;
+	}
+</style>
+
+<h1>
+	<p class = "pageTitle", align="center">Today's Workout</p>
+</h1>
+
+<br><br>
+
+<br><br>
+
+<body>
+	
+	<div style="text-align:center">
+		<button class = "AbsButton" onclick="location.href='CurrentWOScreen.html';" type="button" style="height:100px;width:150px"><font size="5">Abs</font></button>
+		<button class = "ArmsButton" onclick="location.href='CurrentWOScreen.html';" type="button" style="height:100px;width:150px"><font size="5">Arms</font></button><br><br>
+		<button class = "ChestButton" onclick="location.href='CurrentWOScreen.html';" type="button" style="height:100px;width:150px"><font size="5">Chest/Back</font></button>
+		<button class = "LegsButton" onclick="location.href='CurrentWOScreen.html';" type="button" style="height:100px;width:150px"><font size="5">Legs</font></button><br><br>
+	</div>
+	
+<script>
+function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+</script>
+
+</body>
+
+</html>
