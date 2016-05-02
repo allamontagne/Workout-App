@@ -6,6 +6,10 @@ body {
 	font-family: Verdana, sans-serif;
 }
 
+.table{
+	font-size: 30px;
+}
+
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -92,17 +96,24 @@ ul.topnav li a.active {
 		</ul>
 	</div>
 </body>
+
+<body>
+<form method="link">
+	<input type = "button" onclick="location.href='HelpScreen.html';" id = "HelpButton" value="?">
+</form>
+</body>
+
 <h1>
 	<p class = "pageTitle", align="center">Arms</p>
 </h1>
-<table border="0", align="center">
+<table border="0", align="center" class = "table">
 	<tr>
-		<td font size="8">Workout</td>
-		<td font size="8">Sets</td>
-		<td font size="8">Reps</td>
+		<td>Workout</td>
+		<td>Sets<font color="white">lllllllll</color></td>
+		<td>Reps</td>
 	</tr>
 	<tr>
-		<td>Barbell Curls</td>
+		<td>Barbell Curls<font color="white">lllllllllllllll</color></td>
 		<td>3</td>
 		<td>20</td>
 	</tr>
@@ -122,6 +133,22 @@ ul.topnav li a.active {
 		<td>20</td>
 	</tr>
 </table>
+
+<style>
+	#helpButton {
+		background-color: #FF9C5B;
+		height: 30px;
+		width: 30px;
+		border-radius: 30px;
+		border: none;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		float:right;
+	}
+</style>
 <script>
 function navFunction() {
     document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
