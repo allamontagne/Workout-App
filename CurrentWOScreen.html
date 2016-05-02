@@ -96,6 +96,13 @@ ul.topnav li a.active {
 		</ul>
 	</div>
 </body>
+
+<body>
+<form method="link">
+	<input type = "button" onclick="location.href='HelpScreen.html';" id = "HelpButton" value="?">
+</form>
+</body>
+
 <h1>
 	<p class = "pageTitle", align="center">Arms</p>
 </h1>
@@ -126,6 +133,22 @@ ul.topnav li a.active {
 		<td>20</td>
 	</tr>
 </table>
+
+<style>
+	#helpButton {
+		background-color: #F5634A;
+		height: 30px;
+		width: 30px;
+		border-radius: 30px;
+		border: none;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		float:right;
+	}
+</style>
 <script>
 function navFunction() {
     document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
