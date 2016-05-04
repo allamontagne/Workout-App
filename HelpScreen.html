@@ -36,6 +36,17 @@ ul.topnav li a.active {
 	background-color: #FF9C5B;
 }
 
+.Help{
+		margin-top: 30px;
+		padding: 40px 25px;
+		background: #F5634A;
+		color: white;
+		font-size: 28px;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		text-align: center;
+	}
+
 @media screen and (max-width: 545px){
 	ul.topnav li:not(:first-child) {
 		display: none;
@@ -60,6 +71,7 @@ ul.topnav li a.active {
 		display: block;
 		text-align: left;
 	}
+	
 }
 
 </style>
@@ -79,9 +91,9 @@ ul.topnav li a.active {
 		</ul>
 	</div>
 </body>
-<h1>Help here!!!</h1>
+<div class="Help">FAQ</div>
 
-	<script>
+<script>
 function navFunction() {
     document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
 }
