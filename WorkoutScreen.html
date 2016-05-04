@@ -73,10 +73,10 @@ ul.topnav li a.active {
 	<div class ="nav">
 		<ul class="topnav">
 			<li><a href = "HomeScreen.html"> Home</a></li>
-			<li><a class ="active" href = "">My Workout</a></li>
+			<li><a class ="active" href = "WorkoutScreen.html">My Workout</a></li>
 			<li><a href = "CalendarScreen.html">Calendar</a></li>
 			<li><a href = "ELookUp.html">E-Lookup</a></li>
-			<li><a href = "HelpScreen.html">Help </a></li>
+			<li><a href = "HelpScreen.html" style="float:right">Help </a></li>
 			<li class="icon">
 				<a href="javascript:void(0);" onclick="navFunction()">&#9776;</a>
 			</li>
@@ -130,17 +130,22 @@ ul.topnav li a.active {
 		height:100px;
 		width:150px
 	}
+	
+	.todaysWorkout{
+	margin-top: 30px;
+    padding: 45px 25px;
+    background: #F5634A;
+	color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+	text-align: center;
+}
 </style>
-
-<h1>
-	<br>
-	<p class = "pageTitle", align="center">Today's Workout</p>
-</h1>
-
-<br><br>
-
-<br>
-
+<div class="todaysWorkout">
+	Today's Workout
+</div>
+<br><br><br>
 <body>
 	
 	<div style="text-align:center">
