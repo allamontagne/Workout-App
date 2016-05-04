@@ -6,18 +6,15 @@
 			<li><a href = "HomeScreen.html"> Home</a></li>
 			<li><a href = "WorkoutScreen.html">My Workout</a></li>
 			<li><a class ="active" href = "">Calendar</a></li>
-			<li><a href = "ELookUp.html">Equipment Lookup</a></li>
+			<li><a href = "ELookUp.html">E-Lookup</a></li>
+			<li><a href = "HelpScreen.html">Help </a></li>
 			<li class="icon">
 				<a href="javascript:void(0);" onclick="navFunction()">&#9776;</a>
 			</li>
 		</ul>
 	</div>
 	
-	<body>
-<form method="link">
-	<input type = "button" onclick="location.href='HelpScreen.html';" id = "HelpButton" value="?">
-</form>
-</body>
+
 
 <style>
 #helpButton {
@@ -93,7 +90,7 @@
 <div id="schedule">
 <h2> August 10th </h2>
 <a href="CurrentWOScreen.html"> Arms </a>
-<a href="AbsWOScreen.html"> Abs </a>
+<a href="AbsWorkoutScreen.html"> Abs </a>
 <div>
 
 <style>
@@ -210,10 +207,6 @@ body {font-family: Verdana, sans-serif;}
 }
 
 @media screen and (max-width: 540px) and (min-width: 401px){
-    ul.topnav li {
-		float: none;
-		font-size: 16px;
-	}
 		/* Weekdays (Mon-Sun) */
 	.weekdays {
 		margin: 0;
@@ -250,7 +243,7 @@ body {font-family: Verdana, sans-serif;}
 	
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 545px){
 	ul.topnav li:not(:first-child) {
 		display: none;
 	}
