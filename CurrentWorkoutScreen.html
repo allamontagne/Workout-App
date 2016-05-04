@@ -1,0 +1,142 @@
+<html>
+<head>
+<style>
+body {
+	margin: 0;
+	font-family: Verdana, sans-serif;
+}
+
+.table{
+	font-size: 30px;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3B8183;
+	font-size: 18px;
+}
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: #FAD089;
+}
+
+ul.topnav li.icon {
+	display: none;
+}
+
+ul.topnav li a.active {
+	background-color: #FF9C5B;
+}
+
+
+@media screen and (max-width: 545px){
+	ul.topnav li:not(:first-child) {
+		display: none;
+	}
+	ul.topnav li.icon {
+		float: right;
+		display: inline-block;
+	}
+	ul.topnav.responsive {
+		position: relative;
+	}
+	ul.topnav.responsive li.icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	ul.topnav.responsive li {
+		float: none;
+		display: inline;
+	}
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+	}
+}
+
+</style>
+</head>
+
+<body>
+	<div class ="nav">
+		<ul class="topnav">
+			<li><a href = "HomeScreen.html"> Home</a></li>
+			<li><a class ="active" href ="WorkoutScreen.html">My Workout</a></li>
+			<li><a href = "CalendarScreen.html">Calendar</a></li>
+			<li><a href = "ELookUp.html">E-Lookup</a></li>
+			<li><a href = "HelpScreen.html">Help </a></li>
+			<li class="icon">
+				<a href="javascript:void(0);" onclick="navFunction()">&#9776;</a>
+			</li>
+		</ul>
+	</div>
+</body>
+
+<h1>
+	<p class = "pageTitle", align="center">Arms</p>
+</h1>
+<table border="0", align="center" class = "table">
+	<tr>
+		<td>Workout</td>
+		<td>Sets<font color="white">lllllllll</color></td>
+		<td>Reps</td>
+	</tr>
+	<tr>
+		<td>Barbell Curls<font color="white">lllllllllllllll</color></td>
+		<td>3</td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td>Dumbbell Curls</td>
+		<td>3</td>
+		<td>15</td>
+	</tr>
+	<tr>
+		<td>Tricep Curls</td>
+		<td>4</td>
+		<td>15</td>
+	</tr>
+	<tr>
+		<td>Skull Crushers</td>
+		<td>3</td>
+		<td>20</td>
+	</tr>
+</table>
+
+<style>
+	#helpButton {
+		background-color: #FF9C5B;
+		height: 30px;
+		width: 30px;
+		border-radius: 30px;
+		border: none;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 20px;
+		float:right;
+	}
+</style>
+<script>
+function navFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
+</script>
+</html>
