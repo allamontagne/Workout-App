@@ -87,6 +87,99 @@ ul.topnav li a.active {
 <div class = "AddWorkout">
 	Add Workout
 </div>
+	<br><br>
+	<div class="form">
+     
+        
+        <div id="login">
+          
+          <form action="/" method="post">
+          
+		  <div class="field-wrap">
+            <label>
+              Workout Name<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+		  
+		  
+		  <div class="field-wrap">
+            <label>
+              Target Area<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+		  
+		  <div class="field-wrap">
+            <label>
+              First Exercise<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+		  
+            <div class="field-wrap">
+            <label>
+              Sets<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Reps<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+		  <div class="field-wrap">
+            <label>
+              Second Exercise<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+		  
+            <div class="field-wrap">
+            <label>
+              Sets<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Reps<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+		  <div class="field-wrap">
+            <label>
+              Third Exercise<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+		  
+            <div class="field-wrap">
+            <label>
+              Sets<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Reps<span class="req"></span>
+            </label>
+            <input type="name"required autocomplete="off"/>
+          </div>
+         
+          
+          <button class="button button-block" onclick="location.href='WorkoutScreen.html';"/>Create Workout</button>
+          
+          </form>
+
+        </div>
+      
+</div> <!-- /form -->
+	
 	
 <style>
 
@@ -104,6 +197,85 @@ img {
 		letter-spacing: 3px;
 		text-align: center;
 	}
+	.login{
+	font-family: Verdana, sans-serif;
+	margin-top: 20px;
+}
+
+label {
+  left:13px;
+  font-size:22px;
+  margin-left: 10%;
+  .req {
+  	margin:2px;
+  	color:$main;
+  }
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:80%;
+  height:10%;
+  padding:5px 10px;
+  border:1px solid $gray-light;
+  color:$white;
+  margin-left: 10%;
+  margin-top: 5px;
+}
+
+textarea {
+  border:2px solid $gray-light;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:20px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+  }
+}
+
+.form {
+  font-family: Verdana, sans-serif;
+  width: 50%; 
+  margin: 0 auto;
+}
+
+.button {
+  padding:15px 2px;
+  font-size:20px;
+  font-weight:$bold;
+  text-transform:uppercase;
+  color: white;
+  border: none;
+  margin-left: 25%;
+}
+
+.button-block {
+  display:block;
+  width:50%;
+  background-color:#FF9C5B;
+  font-family: Verdana, sans-serif;
+}
+.signin a {
+	text-decoration: none;
+	color: #FF9C5B;
+	font-size: 18px;
+	margin-left: 15px;
+}
 	</style>
 	<script>
 function navFunction() {
