@@ -44,7 +44,7 @@ ul.topnav li a.active {
 }
 
 
-@media screen and (max-width: 545px){
+@media screen and (max-width: 556px){
 	ul.topnav li:not(:first-child) {
 		display: none;
 	}
@@ -69,14 +69,16 @@ ul.topnav li a.active {
 		text-align: left;
 	}
 }
-
+img {
+		float: left;
+	}
 </style>
 </head>
 
 <body>
 	<div class ="nav">
 		<ul class="topnav">
-			<li><a href = "HomeScreen.html"> Home</a></li>
+			<li><a href = "HomeScreen.html"> <img src="logo.png"height= "30" width= "30"/> Home</a></li>
 			<li><a href ="WorkoutScreen.html">My Workout</a></li>
 			<li><a href = "CalendarScreen.html">Calendar</a></li>
 			<li><a href = "ELookUp.html">E-Lookup</a></li>
@@ -119,17 +121,24 @@ ul.topnav li a.active {
         </div>
       
 </div> <!-- /form -->
+<div class="signup">
+<a href="SignUp.html">Don't have an account? Click here to sign up! </a>
+</div>
 <style>
 
+.signup{
+	text-align: center;
+}
+
 .Welcome{
-		margin-top: 30px;
-		padding: 45px 25px;
-		background: #F5634A;
-		color: white;
-		font-size: 24px;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-		text-align: center;
+	margin-top: 30px;
+	padding: 45px 25px;
+	background: #F5634A;
+	color: white;
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
 	}
 
 .login{
@@ -203,6 +212,12 @@ textarea {
   width:50%;
   background-color:#FF9C5B;
   font-family: Verdana, sans-serif;
+}
+.signup a {
+	text-decoration: none;
+	color: #FF9C5B;
+	font-size: 18px;
+	margin-left: 15px;
 }
 
 
